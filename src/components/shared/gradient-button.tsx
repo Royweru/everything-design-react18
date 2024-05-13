@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils"
 
 const GradientButton = ({content,onClick,className,disabled}:{
-    content:string,onClick?:React.MouseEventHandler<HTMLButtonElement>,className:string,disabled:boolean
+    content:string,onClick?:React.MouseEventHandler<HTMLButtonElement>,className?:string,disabled?:boolean
 }) => {
   return (
     <button
