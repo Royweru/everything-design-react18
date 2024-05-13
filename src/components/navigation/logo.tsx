@@ -2,9 +2,12 @@
 
 export const Logo = () => {
   return (
-    <div className=" w-[150px] h-auto relative">
-      <img src="./assets/images/everything-logo.png" alt="" 
-       style={{height:'100px',width:'100%',borderRadius:'35px'}}/>
+    <div className=" w-full h-auto relative">
+      <img src="./src/assets/images/everything-logo.png" alt="" 
+       style={{height:'60px',width:'60px',borderRadius:'50px'}}/>
+       <h2 className=" text-xs font-grotesk font-semibold tracking-wide text-color-4">
+        Everything Design
+       </h2>
       </div>
   )
 }
