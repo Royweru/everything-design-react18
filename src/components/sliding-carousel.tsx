@@ -29,15 +29,15 @@ export const SlidingCarousel = ({ images }:{
   }, [currentIndex]);
   
   return (
-    <div className="relative h-[400px] group cursor-pointer ">
+    <div className="relative h-[450px] group cursor-pointer rounded-lg">
       <div className="absolute inset-0 flex items-center justify-center">
         <img
-          className="max-h-full w-full hover:opacity-75"
+          className="max-h-full w-full hover:opacity-100 rounded-lg"
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
         />
       </div>
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+      <div className="absolute bottom-2 left-0 right-0 flex justify-center">
         {images.map((_, index) => (
           <button
             key={index}

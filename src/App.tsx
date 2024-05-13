@@ -1,5 +1,6 @@
 
 import { CTA } from "./components/cta";
+import { Footer } from "./components/footer";
 import { Hero } from "./components/hero/hero";
 import { Nav } from "./components/navigation/nav";
 import { Product } from "./components/product";
@@ -21,6 +22,7 @@ function App() {
         <Product />
         <SectionHeader title="Reach Out" />
        <Contact />
+       <Footer />
       </div>
     </>
   );
