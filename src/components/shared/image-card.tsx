@@ -23,8 +23,8 @@ export const ImageCard = ({Product}:ImageCardProps) => {
           <div className=" font-gothic text-4xl font-bold text-n-4 leading-9">
           Kes {Product.price}
           </div>
-          <div className="w-full h-full flex flex-col gap-y-4 font-code">
-            <h3 className=" text-2xl font-semibold  font-code capitalize underline text-n-3">
+          <div className="w-full h-full flex flex-col gap-y-4 font-gothic">
+            <h3 className=" text-2xl font-semibold  font-grotesk capitalize underline text-n-3">
               {Product.name}
             </h3>
             <div className="  text-xs text-n-4 font-gothic font-light">

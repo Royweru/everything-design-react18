@@ -1,24 +1,23 @@
-import { brandedMugs } from "@/data/products-details"
+
 import { ProductHeader } from "../product-header"
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
-import { ImageCard } from "../shared/image-card"
+import { ProductsScroll } from "../products-scroll"
+import { brandedMugs } from "@/data/products-details"
 
 
 export const Product = () => {
   return (
-    <div className=' w-full bg-white py-3 px-4 font-code text-2xl  font-semibold text-color-5 flex flex-col
+    <div className=' w-full bg-transparent py-0 px-4 font-code text-2xl  font-semibold text-color-5 flex flex-col
      gap-y-4
     '>
         
        <ProductHeader title="Branded Mugs" />
-       <ScrollArea className="w-full rounded-md  ">
-        <div className=" flex w-max space-x-4 px-6 py-4">
-           {brandedMugs.map(mug=>(
-            <ImageCard Product={mug} key={mug.id}/>
-           ))}
-        </div>
-        <ScrollBar orientation="horizontal" />
-        </ScrollArea>
+       <ProductsScroll data={brandedMugs}/>
+       <ProductHeader title="Branded T_shirts/jerseys" />
+       <ProductsScroll data={brandedMugs}/>
+       <ProductHeader title="Branded Hats" />
+       <ProductsScroll data={brandedMugs}/>
+       <ProductHeader title="Branded Hoodies" />
+       <ProductsScroll data={brandedMugs}/>
     </div>
   )
 }
