@@ -22,6 +22,12 @@ const navigation = [
         label:"Product",
         href:"#product"
     },
+
+    {
+        id:5,
+        label:"Contact",
+        href:"#reachout"
+    },
 ]
 export const Nav = () => {
     const [scrolled, setScrolled] = useState(false);
