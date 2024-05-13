@@ -1,7 +1,7 @@
 
 import { ProductHeader } from "../product-header"
 import { ProductsScroll } from "../products-scroll"
-import { brandedMugs } from "@/data/products-details"
+import { brandedHatsToppers, brandedHoodies, brandedMugs, brandedTshits } from "@/data/products-details"
 
 
 export const Product = () => {
@@ -13,11 +13,11 @@ export const Product = () => {
        <ProductHeader title="Branded Mugs" />
        <ProductsScroll data={brandedMugs}/>
        <ProductHeader title="Branded T_shirts/jerseys" />
-       <ProductsScroll data={brandedMugs}/>
+       <ProductsScroll data={brandedTshits}/>
        <ProductHeader title="Branded Hats" />
-       <ProductsScroll data={brandedMugs}/>
+       <ProductsScroll data={brandedHatsToppers}/>
        <ProductHeader title="Branded Hoodies" />
-       <ProductsScroll data={brandedMugs}/>
+       <ProductsScroll data={brandedHoodies}/>
     </div>
   )
 }

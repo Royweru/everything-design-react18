@@ -65,10 +65,11 @@ export const brandedMugs:{id:number,price:number,name:string,description:string,
         ]
     },
 ]
-export const brandedTshits:{id:number,name:string,description:string,thumbnail:string,images:string[]}[]=[
+export const brandedTshits:{id:number,price:number,name:string,description:string,thumbnail:string,images:string[]}[]=[
     {
         id:1,
         name:"Branded Mugs",
+        price:650,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -81,6 +82,7 @@ export const brandedTshits:{id:number,name:string,description:string,thumbnail:s
     {
         id:2,
         name:"Savannah",
+        price:650,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -93,6 +95,7 @@ export const brandedTshits:{id:number,name:string,description:string,thumbnail:s
     {
         id:3,
         name:"Nairobi skyline",
+        price:650,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -105,6 +108,7 @@ export const brandedTshits:{id:number,name:string,description:string,thumbnail:s
     {
         id:4,
         name:"Savannah",
+        price:650,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -117,6 +121,7 @@ export const brandedTshits:{id:number,name:string,description:string,thumbnail:s
     {
         id:5,
         name:"White cup",
+        price:650,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -127,10 +132,11 @@ export const brandedTshits:{id:number,name:string,description:string,thumbnail:s
         ]
     },
 ]
-export const brandedHoodies:{id:number,name:string,description:string,thumbnail:string,images:string[]}[]=[
+export const brandedHoodies:{id:number,name:string,price:number,description:string,thumbnail:string,images:string[]}[]=[
     {
         id:1,
         name:"Branded Mugs",
+        price:550,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -143,6 +149,7 @@ export const brandedHoodies:{id:number,name:string,description:string,thumbnail:
     {
         id:2,
         name:"Savannah",
+        price:550,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -155,6 +162,7 @@ export const brandedHoodies:{id:number,name:string,description:string,thumbnail:
     {
         id:3,
         name:"Nairobi skyline",
+        price:550,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -167,6 +175,7 @@ export const brandedHoodies:{id:number,name:string,description:string,thumbnail:
     {
         id:4,
         name:"Savannah",
+        price:550,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -179,6 +188,7 @@ export const brandedHoodies:{id:number,name:string,description:string,thumbnail:
     {
         id:5,
         name:"White cup",
+        price:550,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -189,10 +199,11 @@ export const brandedHoodies:{id:number,name:string,description:string,thumbnail:
         ]
     },
 ]
-export const brandedHatsToppers:{id:number,name:string,description:string,thumbnail:string,images:string[]}[]=[
+export const brandedHatsToppers:{id:number,name:string,price:number,description:string,thumbnail:string,images:string[]}[]=[
     {
         id:1,
         name:"Branded Mugs",
+        price:1000,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -205,6 +216,7 @@ export const brandedHatsToppers:{id:number,name:string,description:string,thumbn
     {
         id:2,
         name:"Savannah",
+        price:1000,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -217,6 +229,7 @@ export const brandedHatsToppers:{id:number,name:string,description:string,thumbn
     {
         id:3,
         name:"Nairobi skyline",
+        price:1000,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -229,6 +242,7 @@ export const brandedHatsToppers:{id:number,name:string,description:string,thumbn
     {
         id:4,
         name:"Savannah",
+        price:1000,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
@@ -241,6 +255,7 @@ export const brandedHatsToppers:{id:number,name:string,description:string,thumbn
     {
         id:5,
         name:"White cup",
+        price:1000,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
