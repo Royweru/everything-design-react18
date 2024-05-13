@@ -18,7 +18,7 @@ export const ImageCard = ({Product}:ImageCardProps) => {
             src={Product.thumbnail}
             alt=""
           />
-             <div className=" flex justify-center items-center w-full absolute bottom-1 right-0 left-0 opacity-15 
+             <div className=" flex justify-center items-center w-full absolute bottom-1 right-0 left-0 opacity-50 
          group-hover:opacity-100 
         ">
          <p className=" text-n-4">

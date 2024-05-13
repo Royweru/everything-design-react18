@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import GradientButton from "./shared/gradient-button";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -17,6 +18,7 @@ export const ContactForm = () => {
       to_name: "Roy Matheri",
       message,
     };
+ 
     try {
       setIsLoading(true);
       if(!name) setIsErr("Name is required!")
@@ -24,10 +26,10 @@ export const ContactForm = () => {
       if(!message) setIsErr("Message is required!")
       if(name &&email &&message){
         await emailjs.send(
-          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+          import.meta.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          import.meta.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
           templateParams,
-          process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
+          import.meta.env.NEXT_PUBLIC_EMAILJS_USER_ID,
         );
         setIsSuccess(
           `Your messsage has been successfully submitted, thanks for the outreach ${name.toUpperCase()},we will be in touch`
@@ -46,6 +48,7 @@ export const ContactForm = () => {
   };
   return (
     <div className=" grid md:grid-cols-2 gap-4 w-full">
+
       <div className=" flex flex-col gap-y-7 px-12">
         <div className=" w-full">
           <label htmlFor="" className=" font-gothic   text-xs font-semibold text-color-2 text-centers">
@@ -63,6 +66,7 @@ export const ContactForm = () => {
                 tracking-wide"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            disabled={isLoading}
           />
         </div>
         <div className=" w-full">
@@ -86,9 +90,9 @@ export const ContactForm = () => {
               text-xl tracking-wide italic"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            disabled={isLoading}
           />
         </div>
-        
       </div>
 
       <div className=" w-full p-12">
@@ -100,8 +104,25 @@ export const ContactForm = () => {
           text-color-2 bg-n-4 font-gothic font-semibold text-xl
           focus:outline-k-4  border-transparent tracking-wide italic
           "
+          disabled={isLoading}
           />
       </div>
+      <div className=" w-ful px-24 flex justify-center items-center">
+      <GradientButton content="SUBMIT" onClick={onSubmit} className={" "} disabled={isLoading}/>
+      </div>
+      {isSuccess&&( 
+            <div className=" flex w-full bg-emerald-300 text-color-2 rounded-md
+            justify-center items-center text-center italic  font-semibold font-grotesk">
+                {isSuccess}
+           </div>
+      )}
+      {isSuccess&&(
+            <div className=" flex w-full bg-rose-700 text-color-2
+            justify-center items-center text-center  italic font-semibold font-grotesk">
+                {isErr}
+           </div>
+      )}
+      
     </div>
   );
 };
