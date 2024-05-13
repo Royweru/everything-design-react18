@@ -22,9 +22,12 @@
 .navbar{
   transition: opacity 0.3s ease;
 }
+.scrollled{
+  opacity: 0.7;
+}
 
 .scrollled .navbar {
-  opacity: 0.7; /* Change this to your desired opacity */
+  /* Change this to your desired opacity */
 }
 @layer base {
   body {

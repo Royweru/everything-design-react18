@@ -28,7 +28,7 @@ export const Nav = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 30) { // Adjust 50 to your preferred scroll position
+      if (window.scrollY > 50) { // Adjust 50 to your preferred scroll position
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -42,7 +42,7 @@ export const Nav = () => {
     };
   }, []);
   return (
-    <div className={` ${scrolled?'scrolled':''}  w-full font-code font-bold py-3 px-2 flex border-b-[0.5px] border-color-3 justify-between top-0 fixed lg:backdrop-blur-sm bg-color-4 z-50 `}>
+    <div className={` ${scrolled? ' bg-color-3 opacity-90':''}  w-full font-code font-bold py-3 px-2 flex border-b-[0.5px] border-color-3 justify-between top-0 fixed lg:backdrop-blur-sm bg-n-4 z-50 `}>
         <Logo />
         <nav className="hidden navbar  top-[5rem] left-0  right-0 bottom-0 bg-transparent
           lg:static lg:flex lg:mx-auto lg:bg-transparent w-2/5 items-center justify-center">
