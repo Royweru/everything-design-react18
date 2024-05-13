@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { ServiceBox } from '../service-box'
 import { ServiceDetails } from '@/data/service-details'
 const Services = () => {
