@@ -19,6 +19,13 @@
   
 }
 
+.navbar{
+  transition: opacity 0.3s ease;
+}
+
+.scrollled .navbar {
+  opacity: 0.7; /* Change this to your desired opacity */
+}
 @layer base {
   body {
     @apply font-grotesk bg-b-1 text-color-1  text-base;

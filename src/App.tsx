@@ -7,7 +7,7 @@ import { SectionHeader } from "./components/shared/section-header";
 function App() {
   return (
     <>
-      <div className=" pt-[1.5rem]  h-full">
+      <div className=" pt-[4.75rem] lg:pt-[7rem]  h-full">
         <Nav />
         <Hero />
         <SectionHeader title="Services" />
