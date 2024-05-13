@@ -1,6 +1,8 @@
+
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import GradientButton from "./shared/gradient-button";
+
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -26,8 +28,8 @@ export const ContactForm = () => {
       if(!message) setIsErr("Message is required!")
       if(name &&email &&message){
         await emailjs.send(
-          import.meta.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-          import.meta.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
           templateParams,
           import.meta.env.NEXT_PUBLIC_EMAILJS_USER_ID as string,
         );

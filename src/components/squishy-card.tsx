@@ -1,31 +1,18 @@
 import { motion } from "framer-motion";
 
-interface SquishyCardProps{
-    Product:{
-        thumbnail:string,
-        images:string[],
-        description:string,
-        name:string,
-        id:number,
-        price:number
-    }
-  }
 
-const SquishyCard = ({Product}:SquishyCardProps) => {
+
+const SquishyCard = () => {
   return (
     <section className="bg-neutral-900 px-4 py-12">
       <div className="mx-auto w-fit">
-        <Card price={Product.price} name={Product.name} description={Product.description}/>
+        <Card />
       </div>
     </section>
   );
 };
 
-const Card = ({
-    price,name,description
-}:{
-    price:number,name:string,description:string
-}) => {
+const Card = () => {
   return (
     <motion.div
       whileHover="hover"
@@ -38,11 +25,11 @@ const Card = ({
           scale: 1.05,
         },
       }}
-      className="relative h-96 w-80 shrink-0 overflow-hidden rounded-xl bg-indigo-500 p-8"
+      className="relative h-96 w-4/5 shrink-0 overflow-hidden rounded-xl bg-indigo-500 p-8"
     >
       <div className="relative z-10 text-white">
         <span className="mb-3 block w-fit rounded-full bg-white/30 px-3 py-0.5 text-sm font-light text-white">
-          {name}
+         Eveything Design
         </span>
         <motion.span
           initial={{ scale: 0.85 }}
@@ -57,12 +44,12 @@ const Card = ({
           }}
           className="my-2 block origin-top-left  font-gothic text-6xl font-black leading-[1.2]"
         >
-         Kes {price}
+           cheap
           <br />
-         only
+         prices
         </motion.span>
         <p className=" font-gothic">
-        {description.slice(0,100)}
+          Your besst choice to design anything
         </p>
       </div>
       <button className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white">
