@@ -1,7 +1,9 @@
+
 import { CTA } from "./components/cta";
 import { Hero } from "./components/hero/hero";
 import { Nav } from "./components/navigation/nav";
 import { Product } from "./components/product";
+import { Contact } from "./components/reachout";
 import Services from "./components/services";
 import { SectionHeader } from "./components/shared/section-header";
 
@@ -18,6 +20,7 @@ function App() {
         <SectionHeader title="Products" />
         <Product />
         <SectionHeader title="Reach Out" />
+       <Contact />
       </div>
     </>
   );

@@ -7,11 +7,7 @@ const navigation = [
         label:"Home",
         href:"#hero"
     },
-    {
-        id:2,
-        label:"About",
-        href:"#about"
-    },
+   
     {
         id:3,
         label:"Services",

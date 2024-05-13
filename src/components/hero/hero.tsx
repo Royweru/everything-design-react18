@@ -10,7 +10,7 @@ export const Hero = () => {
     "https://img.freepik.com/free-photo/auto-outdoors-portrait-girl-looking_1304-939.jpg?t=st=1715414326~exp=1715417926~hmac=f4fd5b8b96dcac4e22c75db9c9471e120b99f64278039563ed4e35b3ddb6cf32&w=900",
   ];
   return (
-    <div className="container flex flex-col gap-y-3" id="#hero">
+    <div className="container flex flex-col gap-y-3" id="hero">
    <div className="  grid grid-cols-1 md:grid-cols-2 gap-3 py-5 ">
       <div className=" col-span-1">
         <SlidingCarousel images={imgs} />
