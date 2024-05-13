@@ -15,7 +15,7 @@ interface ProductsScrollProps{
 }
 export const ProductsScroll = ({data}:ProductsScrollProps) => {
   return (
-    <ScrollArea className="w-full rounded-md  bg-white">
+    <ScrollArea className="w-full   bg-white">
     <div className=" flex w-max space-x-4 px-6 py-4">
        {data.map(mug=>(
         <ImageCard Product={mug} key={mug.id}/>

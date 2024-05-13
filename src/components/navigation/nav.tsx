@@ -15,7 +15,7 @@ const navigation = [
     {
         id:3,
         label:"Services",
-        href:"#service"
+        href:"#services"
     },
     {
         id:4,
