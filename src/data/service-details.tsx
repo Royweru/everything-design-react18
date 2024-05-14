@@ -1,5 +1,5 @@
-import { BrushIcon, ShoppingCartIcon, SprayCanIcon } from "lucide-react";
-import React from "react";
+import { FaInstagram, FaMugHot,FaPalette } from 'react-icons/fa';
+
 
 export const images = [
   { src: 'https://img.freepik.com/free-photo/person-surrounded-by-wavy-text_23-2150039706.jpg?t=st=1715414003~exp=1715417603~hmac=f4a9c2eac3398bea857ecbbdab11702c7333f6a0fb3c02ecc4482dd5652d5ed2&w=900', width: 400, height: 300 },
@@ -12,24 +12,24 @@ export const images = [
 export const ServiceDetails:{id:number,icon:React.ReactElement<unknown>,label:string,description:string}[] = [
   {
     id: 1,
-    icon: <SprayCanIcon className="  w-24 h-24 text-n-5 font-bold" />,
-    label: "Fast Quick Delivery",
+    icon: <FaMugHot className="  w-24 h-24 text-n-5 font-bold" />,
+    label: "Custom Merchandise Design",
     description:
-      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual",
+      "Make your brand unforgettable with our custom merchandise design service. Whether you need mugs, hats, t-shirts, or jerseys, our team creates striking designs that represent your brand’s identity. Perfect for promotional events, corporate gifts, or retail collections.",
   },
   {
     id: 2,
-    icon: <BrushIcon className=" w-24 h-24 text-n-5 font-bold" />,
-    label: "Fast Quick Delivery",
+    icon: <FaPalette className=" w-24 h-24 text-n-5 font-bold" />,
+    label: "Logo and Brand Identity Development",
     description:
-      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual",
+      "Your brand’s logo is the cornerstone of its identity. Our expert designers work closely with you to develop a unique and impactful logo, along with a cohesive brand identity that includes color schemes, typography, and visual guidelines. Stand out in the market with a brand that speaks volumes.",
   },
   {
     id: 3,
-    icon: <ShoppingCartIcon className=" w-24 h-24 text-n-5 font-bold" />,
-    label: "Fast Quick Delivery",
+    icon: <FaInstagram className=" w-24 h-24 text-n-5 font-bold" />,
+    label: " Social Media Graphics and Marketing Collateral",
     description:
-      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual",
+      "Boost your online presence with our tailored social media graphics and marketing collateral. From eye-catching Instagram posts and Facebook banners to professional brochures and business cards, we ensure your brand stays consistent and visually appealing across all platforms.",
   },
 //   {
 //     id: 4,

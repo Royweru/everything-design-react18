@@ -8,9 +8,9 @@ export const Socials = () => {
             SOCIALS
         </h2>
     <div className=" w-full items-center flex justify-center space-x-4 md:space-x-6 h-full   gap-4">
-        <FaFacebook className="  h-15 w-15 text-k-4 hover:text-white cursor-pointer" />
-        <FaTwitter className=" h-15 w-15 text-k-4 hover:text-white cursor-pointer"/>
-        <FaWhatsapp className=" h-15 w-15 text-k-4 hover:text-white cursor-pointer"/>
+        <FaFacebook className="  h-15 w-15 text-n-9 hover:text-white cursor-pointer" />
+        <FaTwitter className=" h-15 w-15 text-n-9 hover:text-white cursor-pointer"/>
+        <FaWhatsapp className=" h-15 w-15 text-n-9 hover:text-white cursor-pointer"/>
     </div>
     </div>
 
