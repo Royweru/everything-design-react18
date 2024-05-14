@@ -21,7 +21,6 @@ const ProductCarousel = ({Product}:ProductCarouselProps) => {
            key={product.id}
             className="flex-none w-64  bg-n-4 rounded-lg shadow-md"
             
-            onClick={()=>document?.getElementById('my_modal_3')?.showModal()}
             >
             <img
               src={product.thumbnail}

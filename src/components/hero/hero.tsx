@@ -6,8 +6,10 @@ export const Hero = () => {
   const imgs: string[] = [
     "https://img.freepik.com/free-photo/person-surrounded-by-wavy-text_23-2150039706.jpg?t=st=1715414003~exp=1715417603~hmac=f4a9c2eac3398bea857ecbbdab11702c7333f6a0fb3c02ecc4482dd5652d5ed2&w=900",
     "/images/slide1.png",
+    "https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
     "/images/slide2.png",
     "/images/slide3.png",
+
   ];
   return (
     <div className="container flex flex-col gap-y-3" id="hero">
@@ -23,7 +25,7 @@ export const Hero = () => {
       </div>
     </div>
     <div className=" w-full flex justify-center items-center">
-      <GradientButton content="START"  />
+      <GradientButton content="EXPLORE" href="#product" />
     </div>
     </div>
  

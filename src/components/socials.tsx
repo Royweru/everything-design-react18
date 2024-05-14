@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa"
 export const Socials = () => {
   return (
     <div className=" flex flex-col h-full w-full justify-evenly">
-        <h2 className=" font-grotesk text-neutral-600 font-semibold text-3xl text-center">
+        <h2 className=" font-grotesk text-color-2 font-semibold text-3xl text-center">
             SOCIALS
         </h2>
     <div className=" w-full items-center flex justify-center space-x-4 md:space-x-6 h-full   gap-4">
