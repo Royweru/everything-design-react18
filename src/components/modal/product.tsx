@@ -2,25 +2,30 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
 import { useProductModal } from "@/hooks/useModal";
 import { ModalSocials } from "../shared/modal-socials";
+import { ScrollArea } from "../ui/scroll-area";
 
 export const ProductModal = () => {
   const { isOpen, data, onClose } = useProductModal();
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
+         
       <DialogContent className="  text-color-2">
+      <ScrollArea className=" h-[500px]">
         <DialogHeader>
           <DialogTitle>{data?.name}</DialogTitle>
           <DialogDescription>
            {data?.description}
           </DialogDescription>
         </DialogHeader>
+    
         <div className=" w-full relative flex flex-col gap-y-4">
-            <div className=" relative w-full grid grid-cols-2 gap-1">
+            <div className=" relative w-full grid md:grid-cols-2 gap-1">
               {data?.images?.map((img) => (
                 <div key={img} className=" col-span-1 h-[250px]">
                   <img
@@ -39,14 +44,16 @@ export const ProductModal = () => {
                   only
                  </div>
             </div>
-            <div className=" w-full px-4 py-3  font-gothic flex justify-between items-center">
-               <h4 className="  text-color-5 text-xl font-semibold">
+        </div>
+        
+      
+       <DialogFooter className=" w-full px-4 py-3  flex justify-between items-center">
+       <h4 className="  text-color-5 text-md font-semibold  font-gothic w-full">
                 Make an order now
                </h4>
                <ModalSocials />
-            </div>
-        </div>
-       
+       </DialogFooter>
+       </ScrollArea>
       </DialogContent>
     </Dialog>
   );
