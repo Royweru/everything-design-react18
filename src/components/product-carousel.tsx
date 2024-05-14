@@ -1,3 +1,4 @@
+import {  useProductModal } from "@/hooks/useModal";
 
 interface ProductCarouselProps{
   
@@ -11,7 +12,7 @@ interface ProductCarouselProps{
     }[]
 }
 const ProductCarousel = ({Product}:ProductCarouselProps) => {
-
+ const{onOpen} = useProductModal()
 
   return (
     <div className="relative w-full">
@@ -19,17 +20,17 @@ const ProductCarousel = ({Product}:ProductCarouselProps) => {
         {Product.map(product => (
           <div
            key={product.id}
-            className="flex-none w-64  bg-n-4 rounded-lg shadow-md"
-            
+            className="flex-none w-64  bg-n-4 rounded-lg shadow-md cursor-pointer group"
+            onClick={()=>onOpen(product)}
             >
             <img
               src={product.thumbnail}
               alt={product.name}
-              className="w-full h-48 object-cover rounded-t-lg"
+              className="w-full h-48 object-cover rounded-t-lg group-hover:scale-105"
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">{product.name}</h3>
-              <p className="text-gray-600">Kes {product.price}</p>
+              <p className="text-gray-600 group-hover:text-color-2">Kes {product.price}</p>
             </div>
           </div>
         ))}

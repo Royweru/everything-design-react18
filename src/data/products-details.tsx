@@ -6,8 +6,7 @@ export const brandedMugs:{id:number,price:number,name:string,description:string,
         description:" Mug branded mama",
         thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
         images:[
-             "/images/mugs/mama.jpeg",
-             
+             "/images/mugs/mama.jpg"     
              
         ]
     },
@@ -26,35 +25,23 @@ export const brandedMugs:{id:number,price:number,name:string,description:string,
         name:"Artistic jungle",
         price:700,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"/images/mug/2.jpg",
+        thumbnail:"/images/mugs/2.jpg",
         images:[
-            "/images/mug/2.jpg",
+            "/images/mugs/2.jpg",
         ]
     },
     {
         id:4,
         name:"Coffee is like a hug...",
-        price:200,
+        price:800,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"/images/3.jpg",
+        thumbnail:"/images/mugs/3.jpg",
         images:[
              "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
              "https://img.freepik.com/premium-vector/creative-abstract-background_17005-111.jpg?w=740",
         ]
     },
-    {
-        id:5,
-        name:"White cup",
-        price:200,
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
-        images:[
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://img.freepik.com/premium-vector/creative-abstract-background_17005-111.jpg?w=740",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        ]
-    },
+ 
 ]
 export const brandedTshirts:{id:number,price:number,name:string,description:string,thumbnail:string,images:string[]}[]=[
     {

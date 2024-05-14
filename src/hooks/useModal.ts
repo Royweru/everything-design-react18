@@ -16,7 +16,7 @@ interface storeModal{
     data:Product|null
 }
 
-export const useModal =  create<storeModal>((set)=>(
+export const useProductModal =  create<storeModal>((set)=>(
     {
         isOpen:false,
         onOpen:(data={})=>set({data,isOpen:true}),

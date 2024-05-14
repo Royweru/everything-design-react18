@@ -2,7 +2,7 @@
 import ProductCarousel from "../product-carousel"
 import { ProductHeader } from "../product-header"
 
-import { brandedHatsToppers, brandedHoodies, brandedMugs, brandedTshits } from "@/data/products-details"
+import { brandedHatsToppers, brandedHoodies, brandedMugs, brandedTshirts } from "@/data/products-details"
 
 
 export const Product = () => {
@@ -14,7 +14,7 @@ export const Product = () => {
        <ProductHeader title="Branded Mugs" />
        <ProductCarousel Product={brandedMugs} />
        <ProductHeader title="Branded T-shirts/jerseys" />
-       <ProductCarousel Product={brandedTshits}/>
+       <ProductCarousel Product={brandedTshirts}/>
        <ProductHeader title="Branded Hats" />
        <ProductCarousel Product={brandedHatsToppers}/>
        <ProductHeader title="Branded Hoodies" />
