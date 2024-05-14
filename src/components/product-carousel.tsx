@@ -17,7 +17,7 @@ const ProductCarousel = ({Product}:ProductCarouselProps) => {
     <div className="relative w-full">
       <div className="flex overflow-x-scroll space-x-4 p-4 scrollbar-hide">
         {Product.map(product => (
-          <div key={product.id} className="flex-none w-64 bg-white rounded-lg shadow-md">
+          <div key={product.id} className="flex-none w-64  bg-n-4 rounded-lg shadow-md">
             <img
               src={product.thumbnail}
               alt={product.name}
@@ -25,7 +25,7 @@ const ProductCarousel = ({Product}:ProductCarouselProps) => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">{product.name}</h3>
-              <p className="text-gray-600">{product.price}</p>
+              <p className="text-gray-600">Kes {product.price}</p>
             </div>
           </div>
         ))}
