@@ -7,6 +7,11 @@ const navigation = [
         label:"Home",
         href:"#hero"
     },
+    {
+      id:2,
+      label:"Featured",
+      href:"#featured"
+  },
    
     {
         id:3,

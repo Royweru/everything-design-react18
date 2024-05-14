@@ -17,8 +17,8 @@ export const Hero = () => {
       </div>
       <div className=" col-span-1">
         <HeroText
-          title="Lorem ipsum is placeholder text  "
-          description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+          title="Transform Your Brand with Stunning Designs "
+          description="At Everything Design, we bring your vision to life with custom branding and graphic design services. From eye-catching mugs and hats to standout t-shirts and jerseys, our creative experts craft unique and memorable designs that elevate your brand. Let’s create something amazing together."
         />
       </div>
     </div>

@@ -17,7 +17,12 @@ const ProductCarousel = ({Product}:ProductCarouselProps) => {
     <div className="relative w-full">
       <div className="flex overflow-x-scroll space-x-4 p-4 scrollbar-hide">
         {Product.map(product => (
-          <div key={product.id} className="flex-none w-64  bg-n-4 rounded-lg shadow-md">
+          <div
+           key={product.id}
+            className="flex-none w-64  bg-n-4 rounded-lg shadow-md"
+            
+            onClick={()=>document?.getElementById('my_modal_3')?.showModal()}
+            >
             <img
               src={product.thumbnail}
               alt={product.name}

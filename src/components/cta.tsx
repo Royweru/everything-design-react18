@@ -4,7 +4,7 @@ import TiedGallery from "./shared/tied-gallery"
 
 export const CTA = () => {
   return (
-    <div className=' container py-2 h-full flex flex-col gap-y-4' id="#featured">
+    <div className=' container py-2 h-full flex flex-col gap-y-4' id="featured">
         <div className=' w-full relative grid md:grid-cols-2 gap-3 '>
              <div className=" font-code font-semibold text-lg col-span-1 leading-[1.75rem] px-6s h-full flex justify-center items-center px-6">
                  <p className=" tracking-wide">
