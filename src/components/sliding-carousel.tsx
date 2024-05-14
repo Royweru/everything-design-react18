@@ -42,7 +42,7 @@ export const SlidingCarousel = ({ images }:{
           <button
             key={index}
             className={`h-2 w-2 mx-1 rounded-full focus:outline-none ${
-              index === currentIndex ? 'bg-white' : 'bg-gray-500'
+              index === currentIndex ? ' bg-color-1' : 'bg-gray-500'
             }`}
             onClick={() => goToSlide(index)}
           />
