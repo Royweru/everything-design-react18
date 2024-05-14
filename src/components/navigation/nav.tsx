@@ -51,8 +51,8 @@ export const Nav = () => {
     };
   }, []);
   return (
-    <div className={` ${scrolled? ' bg-n-9 opacity-95 hidden md:block':''}  w-full h-max
-    font-code font-bold py-3 px-2 flex border-b-[0.5px]  border-k-4 
+    <div className={` ${scrolled? ' bg-n-9 opacity-95 hidden md:flex':''}  w-full h-max
+    font-code font-bold py-3 px-2  border-b-[0.5px] flex  border-k-4 
     justify-between top-0 fixed lg:backdrop-blur-sm bg-n-4 z-50 `}>
      
         <Logo />
