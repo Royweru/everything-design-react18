@@ -2,32 +2,34 @@ export const brandedMugs:{id:number,price:number,name:string,description:string,
     {
         id:1,
         name:"Mama mug",
-        price:650,
+        price:800,
         description:`Get this charming "Mama" mug and make your mornings brighter. Perfect for coffee, tea, or any favorite beverage, this mug is a lovely way to show appreciation for the special mama in your life. Crafted from high-quality ceramic, it features a comfortable handle and a stylish design that will stand out in any kitchen. Whether as a gift or a treat for yourself, this mug is a wonderful way to celebrate motherhood and start the day with a smile.`,
-        thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
+        thumbnail:"https://i.pinimg.com/originals/b3/49/1f/b3491f86f4a2c99c25ac2b02e4a7a088.jpg",
         images:[
-             "/images/mugs/mama.jpg"     
-             
+             "/images/mugs/mama.jpg",
+        "https://i.pinimg.com/originals/53/cc/fa/53ccfa0cff6ed50e93899964f80c8654.jpg",
+        "https://i.pinimg.com/originals/cf/dc/91/cfdc917f70214f3ebc0c998683292a2d.jpg"
         ]
     },
     {
         id:2,
         name:"Coffe beans",
-        price:650,
+        price:800,
         description:"Experience the rich and bold flavors of our premium Coffee Beans. Sourced from the finest coffee-growing regions, these beans are expertly roasted to perfection, ensuring a smooth and aromatic cup every time. Whether you prefer a strong espresso or a mellow drip coffee, our beans deliver a satisfying and flavorful experience. Ideal for coffee enthusiasts who appreciate quality and freshness, these beans are perfect for brewing at home or in the office. Elevate your coffee routine with the exceptional taste of our Coffee Beans.",
         thumbnail:"/images/mugs/4.jpg",
         images:[
-            "/images/mugs/4.jpg",
+            "/images/mugs/5.jpg",
+            "/images/mugs/6.jpg",
         ]
     },
     {
         id:3,
-        name:"Artistic jungle",
+        name:"Savanna premium cider",
         price:700,
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"/images/mugs/2.jpg",
+        description:"Indulge in the essence of luxury with the Savanna Premium Cider Mug. Crafted with utmost care and attention to detail, this exquisite mug embodies sophistication and elegance. Immerse yourself in the rich flavors of Savanna Premium Cider as you sip from this finely-crafted vessel. Whether you're enjoying a quiet evening at home or hosting a gathering with loved ones, elevate your drinking experience with the Savanna Premium Cider Mug. Crafted for those who appreciate the finer things in life, it's a true testament to the art of indulgence.",
+        thumbnail:"/images/mugs/7.jpg",
         images:[
-            "/images/mugs/2.jpg",
+            "/images/mugs/7.jpg",
         ]
     },
     {
@@ -37,8 +39,8 @@ export const brandedMugs:{id:number,price:number,name:string,description:string,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         thumbnail:"/images/mugs/3.jpg",
         images:[
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://img.freepik.com/premium-vector/creative-abstract-background_17005-111.jpg?w=740",
+             "/images/mugs/3.jpg",
+             "/images/mugs/9.jpg",
         ]
     },
  
@@ -65,7 +67,7 @@ export const brandedTshirts:{id:number,price:number,name:string,description:stri
         images:[
              "/images/t-shirts/bt6.jpg",
              "/images/t-shirts/bt4.jpg",
-             "/images/t-shirts/bt2.jpg"
+             "/images/t-shirts/bt3.jpg"
         ]
     },
     {
