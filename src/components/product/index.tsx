@@ -15,7 +15,7 @@ export const Product = () => {
        <ProductCarousel Product={brandedMugs} />
        <ProductHeader title="Branded T-shirts/jerseys" />
        <ProductCarousel Product={brandedTshirts}/>
-       <ProductHeader title="Branded Hats" />
+       <ProductHeader title="Branded Hats/Toppers" />
        <ProductCarousel Product={brandedHatsToppers}/>
        <ProductHeader title="Branded Hoodies" />
        <ProductCarousel Product={brandedHoodies}/>
