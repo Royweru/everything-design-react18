@@ -1,5 +1,6 @@
 import { Logo } from "./logo"
 import { useState,useEffect } from "react";
+import {enablePageScroll,disablePageScroll} from "scroll-lock"
 
 
 const navigation = [
@@ -35,6 +36,19 @@ export const Nav = () => {
     const [scrolled, setScrolled] = useState(false);
     const [state, setState] = useState(false)
 
+    const toggleState=()=>{
+        if(state){
+            setState(false)
+            enablePageScroll()
+        }else{
+            setState(true)
+            disablePageScroll()
+        }
+    }
+    const onClick = ()=>{
+        setState(false)
+        enablePageScroll()
+    }
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) { // Adjust 50 to your preferred scroll position
@@ -51,7 +65,7 @@ export const Nav = () => {
     };
   }, []);
   return (
-    <div className={` ${scrolled? ' bg-n-9 opacity-95 hidden md:flex':''}  w-full h-max
+    <div className={` ${scrolled? ' bg-n-9 opacity-95 flex':''}  w-full h-max
     font-code font-bold py-3 px-2  border-b-[0.5px] flex  border-k-4 
     justify-between top-0 fixed lg:backdrop-blur-sm bg-n-4 z-50 `}>
      
@@ -62,7 +76,7 @@ export const Nav = () => {
                
                   <div className="md:hidden">
                       <button className="text-k-1 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
-                          onClick={() => setState(!state)}
+                          onClick={toggleState}
                       >
                           {
                               state ? (
@@ -83,7 +97,7 @@ export const Nav = () => {
                       {
                           navigation.map((item, idx) => {
                               return (
-                                <li key={idx} className=" text-color-2 hover:text-indigo-600">
+                                <li key={idx} className=" text-color-2 hover:text-indigo-600" onClick={onClick}>
                                     <a href={item.href}>
                                         { item.label }
                                     </a>

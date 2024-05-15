@@ -17,7 +17,7 @@ export const ProductModal = () => {
          
       <DialogContent className="  text-color-2">
       <ScrollArea className=" h-[500px]">
-        <DialogHeader>
+        <DialogHeader className=" flex flex-col gap-y-4 w-full">
           <DialogTitle>{data?.name}</DialogTitle>
           <DialogDescription>
            {data?.description}
