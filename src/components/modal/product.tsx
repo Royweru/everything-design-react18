@@ -24,14 +24,14 @@ export const ProductModal = () => {
           </DialogDescription>
         </DialogHeader>
     
-        <div className=" w-full relative flex flex-col gap-y-4">
-            <div className=" relative w-full grid md:grid-cols-2 gap-1">
+        <div className=" w-full relative flex flex-col gap-y-4 md:px-6 px-10 my-4">
+            <div className=" relative w-full grid md:grid-cols-2 gap-2">
               {data?.images?.map((img) => (
-                <div key={img} className=" col-span-1 h-[250px]">
+                <div key={img} className=" col-span-1  h-[200px] ">
                   <img
                     src={img}
                     alt=""
-                    className=" rounded-md bg-cover bg-center h-full w-full"
+                    className=" rounded-lg bg-cover bg-center h-full w-full"
                   />
                 </div>
               ))}
@@ -47,11 +47,14 @@ export const ProductModal = () => {
         </div>
         
       
-       <DialogFooter className=" w-full px-4 py-3  flex justify-between items-center">
-       <h4 className="  text-color-5 text-md font-semibold  font-gothic w-full">
+       <DialogFooter>
+        <div className=" w-full px-4 py-3 flex items-center justify-center">
+        <h4 className="  text-color-5 text-md font-semibold  font-gothic w-full">
                 Make an order now
-               </h4>
+          </h4>
                <ModalSocials />
+        </div>
+       
        </DialogFooter>
        </ScrollArea>
       </DialogContent>
