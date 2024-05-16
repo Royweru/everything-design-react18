@@ -241,12 +241,14 @@ export const brandedHatsToppers:{id:number,name:string,price:number,description:
     },
     {
         id:5,
-        name: "/images/toppers/4.png",
+        name: "Winners train losers complain",
         price:1000,
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail: "/images/toppers/4.png",
+        description:"Embrace the champion mindset with the 'Winners Train Losers Complain' topper. Designed to motivate and inspire, this premium-quality topper is perfect for your workspace, gym, or as a gift for someone who strives for excellence. Let this bold statement remind you daily that dedication and hard work set winners apart. Elevate your space and fuel your ambition with this powerful and motivational piece.",
+        thumbnail:      "/images/toppers/6.jpg",
         images:[
-            "/images/toppers/4.png"
+            "/images/toppers/6.jpg",
+            "/images/toppers/7.jpg",
+            "/images/toppers/8.jpg",
         ]
     },
 ]
