@@ -210,28 +210,22 @@ export const brandedHatsToppers:{id:number,name:string,price:number,description:
     },
     {
         id:2,
-        name:"Savannah",
-        price:1000,
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
+        name:"You can't hurt me anymore",
+        price:950,
+        description:"This empowering topper is designed for those who have overcome challenges and emerged stronger. Crafted with premium materials, it stands as a powerful statement of resilience and self-worth. Ideal for personal spaces, office desks, or as a meaningful gift, this topper serves as a daily reminder of your strength and independence. Let it symbolize your journey of healing and growth, and inspire you to face the future with confidence and courage.",
+        thumbnail:"/images/toppers/2.png",
         images:[
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://img.freepik.com/premium-vector/creative-abstract-background_17005-111.jpg?w=740",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            "/images/toppers/2.png",
         ]
     },
     {
         id:3,
         name:"Nairobi skyline",
-        price:1000,
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
+        price:850,
+        description:"Proud of your city? Showcase your love for Nairobi with this stunning skyline topper. Perfect for adding a touch of urban elegance to your space, this topper captures the vibrant essence of Nairobi. Ideal for your desk, bookshelf, or as a unique gift, let this topper be a daily reminder of the city's dynamic spirit and beauty. Celebrate Nairobi in style!",
+        thumbnail: "/images/toppers/3.png",
         images:[
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://img.freepik.com/premium-vector/creative-abstract-background_17005-111.jpg?w=740",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            "/images/toppers/3.png",
         ]
     },
     {
