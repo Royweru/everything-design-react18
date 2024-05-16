@@ -199,15 +199,13 @@ export const brandedHoodies:{id:number,name:string,price:number,description:stri
 export const brandedHatsToppers:{id:number,name:string,price:number,description:string,thumbnail:string,images:string[]}[]=[
     {
         id:1,
-        name:"Branded Mugs",
+        name:"Work hard Dream big",
         price:1000,
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
+        description:" This inspiring topper is designed for those who believe in the power of perseverance and ambition. Crafted with high-quality materials, it not only serves as a motivational piece but also as a testament to your dedication and dreams. Perfect for office desks, study tables, or as a thoughtful gift, this topper will remind you every day that with hard work and big dreams, anything is possible. Let it be a beacon of hope and a source of daily inspiration as you strive to achieve your goals.",
+        thumbnail:"/images/toppers/1.png",
         images:[
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://img.freepik.com/premium-vector/creative-abstract-background_17005-111.jpg?w=740",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+             "/images/toppers/1.png",
+           
         ]
     },
     {

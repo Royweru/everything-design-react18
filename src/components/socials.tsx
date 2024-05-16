@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa"
+import {  FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa"
 
 
 export const Socials = () => {
@@ -8,9 +8,16 @@ export const Socials = () => {
             SOCIALS
         </h2>
     <div className=" w-full items-center flex justify-center space-x-4 md:space-x-6 h-full   gap-4">
-        <FaFacebook className="  h-15 w-15 text-n-9 hover:text-white cursor-pointer" />
-        <FaTwitter className=" h-15 w-15 text-n-9 hover:text-white cursor-pointer"/>
-        <FaWhatsapp className=" h-15 w-15 text-n-9 hover:text-white cursor-pointer"/>
+      <a href="https://www.instagram.com/_g.weru/" target="_blank">
+      <FaInstagram className="  h-12 w-12  text-color-5 hover:text-white cursor-pointer" />
+      </a>
+      <a href="https://wa.me/+254759355344" target="_blank">
+      <FaTwitter className="  h-12 w-12  text-color-5 hover:text-white cursor-pointer" />
+      </a>
+      <a href="https://wa.me/+254716665137" target="_blank">
+      <FaWhatsapp className="  h-12 w-12  text-color-5 hover:text-white cursor-pointer" />
+      </a>
+      
     </div>
     </div>
 
