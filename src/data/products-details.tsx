@@ -251,4 +251,15 @@ export const brandedHatsToppers:{id:number,name:string,price:number,description:
             "/images/toppers/8.jpg",
         ]
     },
+    {
+        id:6,
+        name: "Jesus christ is King..",
+        price:1000,
+        description:"Celebrate your faith with the 'Jesus Christ is King' topper. Crafted with care and reverence, this elegant piece is perfect for your home, office, or as a thoughtful gift. Let it serve as a daily reminder of your beliefs and the eternal love and grace of Jesus Christ. This inspiring topper is a beautiful way to express your devotion and add a touch of spiritual significance to any space.",
+        thumbnail:      "/images/toppers/9.png",
+        images:[
+            "/images/toppers/9.png",
+         
+        ]
+    },
 ]
