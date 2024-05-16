@@ -230,28 +230,23 @@ export const brandedHatsToppers:{id:number,name:string,price:number,description:
     },
     {
         id:4,
-        name:"Savannah",
+        name:"Girls are Drugs",
         price:1000,
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
+        description:"Bold and intriguing, the 'Girls are Drugs' topper is a statement piece that captures attention. Crafted with high-quality materials, this unique topper adds a touch of edgy sophistication to any space. Perfect for sparking conversations, it's ideal for desks, shelves, or as a provocative gift. Embrace the allure and mystery with this captivating topper that stands out and makes a lasting impression.",
+        thumbnail:  "/images/toppers/4.png",
         images:[
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://img.freepik.com/premium-vector/creative-abstract-background_17005-111.jpg?w=740",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            "/images/toppers/4.png",
+            "/images/toppers/5.png",
         ]
     },
     {
         id:5,
-        name:"White cup",
+        name: "/images/toppers/4.png",
         price:1000,
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        thumbnail:"https://img.freepik.com/free-photo/inspirational-quote-written-mug_23-2149261735.jpg?t=st=1715585905~exp=1715589505~hmac=3178de1027b125fdcce96bb423244f7edca047f6c24c9812badb895a20f5abd6&w=900",
+        thumbnail: "/images/toppers/4.png",
         images:[
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://img.freepik.com/premium-vector/creative-abstract-background_17005-111.jpg?w=740",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-             "https://images.pexels.com/photos/18868628/pexels-photo-18868628/free-photo-of-mugs-with-logo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            "/images/toppers/4.png"
         ]
     },
 ]
