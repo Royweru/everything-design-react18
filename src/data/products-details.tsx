@@ -138,6 +138,14 @@ export const brandedTshirts: {
     thumbnail: "/images/slide3.png",
     images: ["/images/slide3.png"],
   },
+  {
+    id: 6,
+    name: "Paul Escobar...",
+    price: 1200,
+    description: `Get a t-shirt with the iconic "Gotha gotha tena" wording. This stylish and comfortable tee is perfect for fans who love to make a statement. Made from high-quality cotton, it offers a soft feel and a great fit for everyday wear. Whether you're out with friends or relaxing at home, this t-shirt is a fantastic addition to your wardrobe. Show off your unique style and embrace the fun with this eye-catching piece!`,
+    thumbnail: "/images/slide3.png",
+    images: ["/images/slide3.png"],
+  },
 ];
 export const brandedHoodies: {
   id: number;
