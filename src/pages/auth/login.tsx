@@ -1,9 +1,36 @@
 import { useState } from "react";
-
+import api from "@/actions/api";
+import { useNavigate } from "react-router-dom";
+import { ACCESS_TOKEN, REFRESH_TOKEN } from "@/constants";
 export const Login = () => {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const onSubmit = async () => {
+    try {
+      setIsLoading(true);
+      const res = await api.post("/api/token/", {
+        username,
+        password,
+      });
+      if (res.status === 200) {
+        localStorage.setItem(ACCESS_TOKEN, res.data.access);
+        localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
+        navigate("/super-admin");
+        alert(`Hey ${username} welcome back!`);
+      }
+    } catch (error) {
+      alert(error);
+      console.log(error);
+    } finally {
+      setUsername("");
+      setPassword("");
+      setIsLoading(false);
+    }
+  };
   return (
     <div
       className=" font-semibold text-xl font-gothic min-h-screen bg-gradient-to-bl from-n-2
@@ -20,11 +47,12 @@ export const Login = () => {
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              disabled={isLoading}
               className=" p-3 w-full relative rounded-xl border-white 
               focus:border-transparent text-sm font-gothic font-semibold text-white"
             />
           </div>
-          <div className=" w-full">
+          {/* <div className=" w-full">
             <input
               type="email"
               placeholder="email"
@@ -33,12 +61,13 @@ export const Login = () => {
               className=" p-3 w-full relative rounded-xl border-white 
               focus:border-transparent text-sm text-white font-gothic font-semibold"
             />
-          </div>
+          </div> */}
           <div className=" w-full">
             <input
               type="password"
               placeholder="password"
               value={password}
+              disabled={isLoading}
               onChange={(e) => setPassword(e.target.value)}
               className=" p-3 w-full relative rounded-xl border-white 
               focus:border-transparent text-sm text-white font-gothic font-semibold"
@@ -46,10 +75,13 @@ export const Login = () => {
           </div>
           <div className=" w-full px-10">
             <button
+              type="submit"
               className="px-8 py-2 rounded-md
              bg-teal-500 text-white font-bold transition duration-200
               hover:bg-white hover:text-black border-2 border-transparent
                hover:border-teal-500 flex justify-center"
+              disabled={isLoading}
+              onClick={onSubmit}
             >
               Log in
             </button>

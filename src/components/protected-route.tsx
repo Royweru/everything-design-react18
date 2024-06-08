@@ -5,7 +5,7 @@ import { jwtDecode } from "jwt-decode";
 import api from "@/actions/api";
 import { Navigate } from "react-router-dom";
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
-  const [isAuthorized, setIsAuthorized] = useState(Boolean);
+  const [isAuthorized, setIsAuthorized] = useState(null);
 
   useEffect(() => {
     auth().catch(() => setIsAuthorized(false));

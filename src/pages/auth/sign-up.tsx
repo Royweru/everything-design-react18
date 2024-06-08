@@ -10,12 +10,12 @@ export const SignUp = () => {
 
   const onSubmit = async () => {
     try {
-      const res = await api.post("/api/user/register", {
+      const res = await api.post("/api/user/register/", {
         username,
         password,
         email,
       });
-      if (res.status === 200) {
+      if (res.status === 201) {
         alert(`successfully registered ${res.data.username}`);
       } else {
         alert("Something went wrong");
