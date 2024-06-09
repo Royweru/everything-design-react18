@@ -1,3 +1,5 @@
 export const Admin = () => {
-  return <div>This is the super admin page</div>;
+  return (
+    <div className=" w-full min-h-screen">This is the super admin page</div>
+  );
 };

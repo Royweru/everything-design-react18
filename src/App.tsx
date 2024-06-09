@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import { Admin } from "./pages/admin";
-import ProtectedRoute from "./components/protected-route";
+import { ProtectedRoute } from "./components/protected-route";
 import { Login } from "./pages/auth/login";
 import { SignUp } from "./pages/auth/sign-up";
 
