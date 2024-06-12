@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer";
 
 const Home = () => {
   return (
-    <div className=" pt-[4.75rem] lg:pt-[7rem]  h-full">
+    <div className=" pt-[4.75rem] lg:pt-[7rem]  h-full  max-w-7xl ">
       <ProductModal />
       <Nav />
       <Hero />

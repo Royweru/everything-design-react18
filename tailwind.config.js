@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
-import daisyui from "daisyui"
+
+import daisyui from "daisyui";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -23,9 +24,8 @@ export default {
           2: "#71F132",
           3: "#32D0F1",
           4: "#B332F1",
-    
         },
-        n:{
+        n: {
           1: "#3F3A52",
           2: "#252134",
           3: "#15131D",
@@ -35,9 +35,9 @@ export default {
           7: "#1B1B2E",
           8: "#2E2A41",
           9: "#6C7275",
-          10:"#f15332",
-          11:"#71f132"
-        }
+          10: "#f15332",
+          11: "#71f132",
+        },
       },
       fontFamily: {
         gothic: ["var(--font-gothic)", ...fontFamily.sans],
@@ -84,7 +84,7 @@ export default {
       addBase({});
       addComponents({
         ".container": {
-          "@apply max-w-[78.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[88.5rem]":
+          "@apply max-w-[78.5rem] mx-auto px-5 md:px-8 lg:px-12 xl:max-w-[80.5rem]":
             {},
         },
         ".h1": {
@@ -106,26 +106,6 @@ export default {
         },
         ".h6": {
           "@apply font-semibold text-lg leading-8": {},
-        },
-        ".body-1": {
-          "@apply text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8":
-            {},
-        },
-        ".body-2": {
-          "@apply font-light text-[0.875rem] leading-6 md:text-base": {},
-        },
-        ".caption": {
-          "@apply text-sm": {},
-        },
-        ".tagline": {
-          "@apply font-grotesk font-light text-xs tracking-tagline uppercase":
-            {},
-        },
-        ".quote": {
-          "@apply font-code text-lg leading-normal": {},
-        },
-        ".button": {
-          "@apply font-code text-xs font-bold uppercase tracking-wider": {},
         },
       });
       addUtilities({
