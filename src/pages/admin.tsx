@@ -65,8 +65,11 @@ export const Admin = () => {
   };
   const onDelete = async (productId: number) => {
     try {
-      const res = await api.delete(`/api/product/${productId}/delete`);
-      if (res.status === 200) return alert("Product deleted successfully!");
+      const res = await api.delete(`/api/product/delete/${productId}/`);
+      // if (res.status === 204) {
+      //   return alert("Product deleted successfully!");
+      // }
+
       window.location.reload();
     } catch (error) {
       console.log(error);

@@ -1,4 +1,3 @@
-import api from "@/actions/api";
 import { Product } from "@/types";
 import { PenIcon, Trash2Icon } from "lucide-react";
 
