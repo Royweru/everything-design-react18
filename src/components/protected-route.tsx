@@ -15,7 +15,7 @@ export const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
     const RefreshToken = localStorage.getItem(REFRESH_TOKEN);
 
     try {
-      const res = await api.post("api/token/refresh", {
+      const res = await api.post("api/token/refresh/", {
         refresh: RefreshToken,
       });
       if (res.status === 200) {
