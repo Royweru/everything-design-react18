@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import axios from "axios";
-import { Product } from "@/types";
+import { Product, UserDetails } from "@/types";
 import { useEffect, useState } from "react";
 import GradientButton from "@/components/shared/gradient-button";
 import api from "@/actions/api";
@@ -10,23 +9,36 @@ import { useNavigate } from "react-router-dom";
 import { AdminProductCard } from "./components/admin-product-card";
 import { AdminLogoutButton } from "./components/admin-logout-button";
 import { AdminHeader } from "./components/admin-header";
+import { fetchProduts } from "@/actions/FetchProducts";
+import { useAdminProductModal } from "@/hooks/useProductModal";
 export const Admin = () => {
+  const { onOpen } = useAdminProductModal();
   const navigate = useNavigate();
+  const [userDetails, setUserDetails] = useState<UserDetails>(null);
   const [products, setProducts] = useState<Product[]>([]);
+
   const [name, setName] = useState("");
+
   const [description, setDescription] = useState("");
+
   const [price, setPrice] = useState("");
+
   const [slug, setSlug] = useState("");
+
   const [images, setImages] = useState([]);
+
   const [thumbnail, setThumbnail] = useState("");
+
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchProduts();
+    productFetch();
+    getUser();
   }, []);
-  const fetchProduts = async () => {
-    const res = await api.get("/api/product/");
-    setProducts(res.data);
+
+  const productFetch = async () => {
+    const res = await fetchProduts();
+    setProducts(res);
   };
   const logoutUser = async () => {
     localStorage.removeItem(ACCESS_TOKEN);
@@ -34,7 +46,17 @@ export const Admin = () => {
     window.location.reload();
     navigate("/super-admin");
   };
-
+  const getUser = async () => {
+    try {
+      const res = await api.get("/api/user/");
+      if (res.status === 200) {
+        setUserDetails(res.data);
+      }
+    } catch (error) {
+      console.error(error);
+      alert(error);
+    }
+  };
   const uploadProduct = async () => {
     setLoading(true);
     try {
@@ -66,9 +88,9 @@ export const Admin = () => {
   const onDelete = async (productId: number) => {
     try {
       const res = await api.delete(`/api/product/delete/${productId}/`);
-      // if (res.status === 204) {
-      //   return alert("Product deleted successfully!");
-      // }
+      if (res.status === 204) {
+        alert("Product deleted successfully!");
+      }
 
       window.location.reload();
     } catch (error) {
@@ -80,8 +102,10 @@ export const Admin = () => {
   const productsLength = products.length;
   return (
     <div className=" w-full min-h-screen p-6">
-      <div className=" w-full my-3 flex  flex-wrap-reverse items-center justify-center gap-3">
-        <AdminHeader />
+      <div className=" w-full my-3 flex  flex-wrap md:flex-row md:justify-between items-center gap-3 md:gap-0">
+        <AdminHeader
+          username={userDetails === null ? "" : userDetails.username}
+        />
         <AdminLogoutButton logout={logoutUser} />
       </div>
       <div className=" grid w-full md:grid-cols-2">
@@ -93,8 +117,12 @@ export const Admin = () => {
             {products.map((product) => (
               <AdminProductCard
                 key={product.id}
+                onClick={() => {
+                  onOpen(product);
+                }}
                 product={product}
                 onDelete={() => onDelete(product.id)}
+                userId={userDetails?.id}
               />
             ))}
           </div>

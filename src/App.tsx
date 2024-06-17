@@ -4,6 +4,7 @@ import { Admin } from "./pages/admin";
 import { ProtectedRoute } from "./components/protected-route";
 import { Login } from "./pages/auth/login";
 import { SignUp } from "./pages/auth/sign-up";
+import { EditModal } from "./pages/components/edit-modal";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         path="/super-admin"
         element={
           <ProtectedRoute>
+            <EditModal />
             <Admin />
           </ProtectedRoute>
         }
