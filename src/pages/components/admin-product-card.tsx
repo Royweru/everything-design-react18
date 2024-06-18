@@ -15,7 +15,7 @@ export const AdminProductCard = ({
   return (
     <div
       className=" my-4 text-2xl flex rounded-xl 
-             bg-n-2  justify-center items-center
+             bg-n-2  justify-center items-center overflow-hidden
               gap-x-2cursor-pointer w-full p-3 cursor-pointer"
     >
       <div className=" relative w-full p-1 flex justify-center items-center">
@@ -64,6 +64,11 @@ export const AdminProductCard = ({
               {product.description}
             </p>
           )}
+        </div>
+        <div className=" relative w-full flex   justify-between items-center">
+          <p className=" text-xs font-semibold max-w-xs text-white">
+            {product.images}
+          </p>
         </div>
       </div>
     </div>
