@@ -12,13 +12,6 @@ import { AdminHeader } from "./components/admin-header";
 import { fetchProduts } from "@/actions/FetchProducts";
 import { useAdminProductModal } from "@/hooks/useProductModal";
 import { FetchCategories } from "@/actions/FetchCategories";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 export const Admin = () => {
   const { onOpen } = useAdminProductModal();
@@ -39,7 +32,16 @@ export const Admin = () => {
     productFetch();
     categoryFetch();
     getUser();
+    categoryData();
   }, []);
+  const categoryData = () => {
+    try {
+      const specificCat = categories.find((cat) => cat.id === 4);
+      console.log(specificCat);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const categoryFetch = async () => {
     const data = await FetchCategories();
     setCategories(data);

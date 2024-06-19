@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export const Featured = () => {
   return (
     <section
-      className="mx-auto container px-4 py-12 text-slate-800"
+      className="mx-auto container px-4 py-12 text-color-2"
       id="featured"
     >
       <div className="mb-8 flex flex-col items-center justify-center gap-4  md:px-4">
