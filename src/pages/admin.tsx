@@ -12,11 +12,14 @@ import { AdminHeader } from "./components/admin-header";
 import { fetchProduts } from "@/actions/FetchProducts";
 import { useAdminProductModal } from "@/hooks/useProductModal";
 import { FetchCategories } from "@/actions/FetchCategories";
+import { FetchEmails } from "@/actions/FetchEmails";
+import { EmailCard } from "./components/email-card";
 
 export const Admin = () => {
   const { onOpen } = useAdminProductModal();
   const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState<UserDetails>(null);
+  const [emails, setEmails] = useState([]);
   const [products, setProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState([]);
   const [name, setName] = useState("");
@@ -33,6 +36,7 @@ export const Admin = () => {
     categoryFetch();
     getUser();
     categoryData();
+    emailFetch();
   }, []);
   const categoryData = async () => {
     try {
@@ -49,6 +53,10 @@ export const Admin = () => {
   const productFetch = async () => {
     const res = await fetchProduts();
     setProducts(res);
+  };
+  const emailFetch = async () => {
+    const res = await FetchEmails();
+    setEmails(res);
   };
   const logoutUser = async () => {
     localStorage.removeItem(ACCESS_TOKEN);
@@ -109,6 +117,14 @@ export const Admin = () => {
       alert(error);
     }
   };
+  const onEmailDelete = async (emailId: string) => {
+    try {
+      const res = await api.delete(`/email-message/delete/${emailId}/`);
+      if (res.status === 204) alert("email deleted");
+    } catch (error) {
+      alert(error);
+    }
+  };
   const onImagesChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const inputValue = e.target.value;
     const imagesArray = inputValue.split(",");
@@ -144,68 +160,82 @@ export const Admin = () => {
         </ScrollArea>
 
         <div className=" col-span-1 py-4  px-8 ">
-          <div className=" relative flex w-full h-full flex-col gap-y-3">
-            <div>
-              <select
-                className="select select-info w-full max-w-xs select-lg text-white"
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
-              >
-                <option disabled selected>
-                  Select category
-                </option>
-                {categories.map((category) => (
-                  <option value={category.id} key={category.id}>
-                    {category.name}
+          <ScrollArea className=" w-full h-[350px] my-5">
+            <div className=" w-full h-full flex flex-col items-center gap-y-2">
+              {emails.map((email) => (
+                <div key={email.id}>
+                  <EmailCard
+                    data={email}
+                    onClick={() => onEmailDelete(email.id)}
+                  />
+                </div>
+              ))}
+            </div>
+          </ScrollArea>
+          <ScrollArea className=" w-full h-[450px]">
+            <div className=" relative flex w-full  flex-col gap-y-3">
+              <div>
+                <select
+                  className="select select-info w-full max-w-xs select-lg text-white"
+                  value={category}
+                  onChange={(e) => setCategory(e.target.value)}
+                >
+                  <option disabled selected>
+                    Select category
                   </option>
-                ))}
-              </select>
+                  {categories.map((category) => (
+                    <option value={category.id} key={category.id}>
+                      {category.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name of the product"
+                  className="input-lg input-bordered w-full  rounded-xl text-color-2"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div>
+                <textarea
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
+                  className="textarea-lg w-full textarea-accent rounded-xl text-color-2"
+                  placeholder="Description not more than 1000 words.."
+                ></textarea>
+              </div>
+              <div>
+                <input
+                  placeholder="Price of the product"
+                  className="input-lg input-bordered w-full  rounded-xl text-color-2"
+                  value={price}
+                  onChange={(e) => setPrice(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  placeholder="Thumbnail"
+                  className="input-lg input-bordered w-full  rounded-xl text-color-2"
+                  value={thumbnail}
+                  onChange={(e) => setThumbnail(e.target.value)}
+                />
+              </div>
+              <div>
+                <textarea
+                  value={images}
+                  onChange={onImagesChange}
+                  className="textarea-lg w-full textarea-accent rounded-xl text-color-2"
+                  placeholder="Images pathname make sure to separate each with a coma"
+                ></textarea>
+              </div>
+              <div>
+                <GradientButton content="SUBMIT" onClick={uploadProduct} />
+              </div>
             </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Name of the product"
-                className="input-lg input-bordered w-full  rounded-xl text-color-2"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div>
-              <textarea
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-                className="textarea-lg w-full textarea-accent rounded-xl text-color-2"
-                placeholder="Description not more than 1000 words.."
-              ></textarea>
-            </div>
-            <div>
-              <input
-                placeholder="Price of the product"
-                className="input-lg input-bordered w-full  rounded-xl text-color-2"
-                value={price}
-                onChange={(e) => setPrice(e.target.value)}
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Thumbnail"
-                className="input-lg input-bordered w-full  rounded-xl text-color-2"
-                value={thumbnail}
-                onChange={(e) => setThumbnail(e.target.value)}
-              />
-            </div>
-            <div>
-              <textarea
-                value={images}
-                onChange={onImagesChange}
-                className="textarea-lg w-full textarea-accent rounded-xl text-color-2"
-                placeholder="Images pathname make sure to separate each with a coma"
-              ></textarea>
-            </div>
-            <div>
-              <GradientButton content="SUBMIT" onClick={uploadProduct} />
-            </div>
-          </div>
+          </ScrollArea>
         </div>
       </div>
     </div>
