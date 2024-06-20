@@ -26,7 +26,6 @@ const Home = () => {
   return (
     <div className=" pt-[4.75rem] lg:pt-[7rem]  h-full  max-w-7xl ">
       <ProductModal />
-      <EmailFeedbackModal />
       <Nav />
       <Hero />
       <SectionHeader title="Services" />

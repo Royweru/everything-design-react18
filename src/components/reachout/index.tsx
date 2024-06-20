@@ -6,6 +6,7 @@ export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
   const onSubmit = async () => {
     try {
       if (name && email && message !== "") {
@@ -58,7 +59,7 @@ export const Contact = () => {
             required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Make an order! leave a comment, say anything"
+            placeholder="Make an order! leave a comment, say anything..."
           ></textarea>
         </div>
       </div>
