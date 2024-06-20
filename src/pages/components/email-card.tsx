@@ -17,7 +17,7 @@ export const EmailCard = ({
         </h2>
         {data.message.length > 100 ? (
           <p className=" text-xs font-gothic tracking-wide leading-relaxed font-semibold text-color-5">
-            {data.message.slice(0, 100)}...
+            {data.message.slice(0, 250)}...
           </p>
         ) : (
           <p className=" text-xs tracking-wide font-gothic leading-relaxed font-semibold text-color-5">
