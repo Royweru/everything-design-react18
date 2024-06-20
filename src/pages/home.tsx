@@ -10,6 +10,7 @@ import { Footer } from "@/components/footer";
 import { Featured } from "@/components/featured";
 import { fetchProduts } from "@/actions/FetchProducts";
 import { useEffect, useState } from "react";
+import { EmailFeedbackModal } from "@/components/modal/email-feedback";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -25,6 +26,7 @@ const Home = () => {
   return (
     <div className=" pt-[4.75rem] lg:pt-[7rem]  h-full  max-w-7xl ">
       <ProductModal />
+      <EmailFeedbackModal />
       <Nav />
       <Hero />
       <SectionHeader title="Services" />

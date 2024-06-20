@@ -34,10 +34,10 @@ export const Admin = () => {
     getUser();
     categoryData();
   }, []);
-  const categoryData = () => {
+  const categoryData = async () => {
     try {
-      const specificCat = categories.find((cat) => cat.id === 4);
-      console.log(specificCat);
+      const res = await api.get("/api/category/2/");
+      if (res.status === 200) console.log(res.data);
     } catch (error) {
       console.log(error);
     }
