@@ -10,7 +10,10 @@ api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem(ACCESS_TOKEN);
     // Only add the token for specific endpoints if needed
-    if (token && !config.url.includes("/api/email-message/")) {
+    if (
+      token &&
+      !config.url.includes("/api/email-message/" || "/api/product/")
+    ) {
       config.headers.Authorization = `Bearer ${token}`;
     }
     return config;
