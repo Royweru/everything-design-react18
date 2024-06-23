@@ -1,5 +1,3 @@
-import GradientButton from "../shared/gradient-button";
-import { SlidingCarousel } from "../sliding-carousel";
 import { Button } from "../ui/button";
 import { HeroCarousel } from "./hero-carousel";
 
@@ -32,9 +30,10 @@ export const Hero = () => {
               Hello there!
             </h1>
             <p className="mb-5 text-white leading-relaxed font-code">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              Creating visually stunning websites, custom-designed t-shirts,
+              unique cake toppers, and high-quality digital prints. Each project
+              is crafted with precision and creativity, ensuring exceptional
+              results that stand out and captivate.
             </p>
             <a href="#product">
               <Button variant="outline">Explore</Button>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import { Checkbox } from "@/components/ui/checkbox";
+// import { Checkbox } from "@/components/ui/checkbox";
 import {
   Dialog,
   DialogContent,
@@ -101,11 +101,11 @@ export const EditModal = () => {
               />
             </div>
             <div>
-              <Checkbox
+              {/* <Checkbox
                 id="terms1"
                 checked={editFeatured}
                 onCheckedChange={(val) => setEditFeatured(val)}
-              />
+              /> */}
               <div className="grid gap-1.5 leading-none">
                 <label
                   htmlFor="terms1"
