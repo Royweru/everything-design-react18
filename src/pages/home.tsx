@@ -24,7 +24,7 @@ const Home = () => {
   };
 
   return (
-    <div className=" pt-[4.75rem] lg:pt-[7rem]  h-full  max-w-7xl ">
+    <div className=" pt-[4.75rem] lg:pt-[5.95 rem]  h-full  max-w-7xl ">
       <ProductModal />
       <Nav />
       <Hero />

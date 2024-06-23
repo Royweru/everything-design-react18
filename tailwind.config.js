@@ -3,44 +3,41 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 import daisyui from "daisyui";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         color: {
-          1: "#000000",
-          2: "#FFFFFF",
-          3: "#FFE685",
-          4: "#350D1A",
-          5: "#f3f0f0",
-          6: "#F0E0C5",
-          7: "#67C2C4",
-          8: "#21C706",
+          1: "#06141B",
+          2: "#11212D",
+          3: "#253745",
+          4: "#4A5C6A",
+          5: "9BA8AB",
         },
-        stroke: {
-          1: "#6A5D5D",
+        primary: {
+          light: "#FF867A",
+          DEFAULT: "#06141B",
+          dark: "#E65C4D",
         },
-        k: {
-          1: "#7c3626",
-          2: "#a33215",
-          3: "#c64304",
-          4: "#69210f",
-          5: "#350d1a",
-          6: "#292929",
+        secondary: {
+          light: "#FFDC47",
+          DEFAULT: "#253745",
+          dark: "#E6C000",
         },
-        n: {
-          1: "#3F3A52",
-          2: "#544B54",
-          3: "#3B3538",
-          4: "#2E2A33",
-          5: "#8B6F6F",
-          6: "#6D5A5A",
-          7: "#4B3832",
-          8: "#6F4E37",
-          9: "#8D8A8A",
-          10: "#F4A460",
-          11: "#FFD700",
+        accent: {
+          light: "#4DF34D",
+          DEFAULT: "#0B8457",
+          dark: "#29A329",
+        },
+        background: {
+          DEFAULT: "#FFFFFF",
+        },
+        text: {
+          light: "#666666",
+          DEFAULT: "#11212D",
+          dark: "#1A1A1A",
         },
       },
       fontFamily: {

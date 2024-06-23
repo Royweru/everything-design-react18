@@ -16,10 +16,10 @@ export const ServiceBox = ({ service }: ServiceBoxProps) => {
         <div>{service.icon}</div>
       </div>
       <div className="flex flex-col gap-y-2 px-4">
-        <h3 className="  text-color-3 text-3xl font-semibold tracking-wide  leading-[1.5rem] font-grotesk">
+        <h3 className="  text-secondary text-3xl font-semibold tracking-wide  leading-[1.5rem] font-grotesk">
           {service.label}
         </h3>
-        <p className=" font-code text-color-2 text-sm font-semibold">
+        <p className=" font-code text-text text-sm font-semibold">
           {service.description}
         </p>
       </div>

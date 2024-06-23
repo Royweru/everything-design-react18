@@ -26,10 +26,8 @@ export const Admin = () => {
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState("");
-  const [slug, setSlug] = useState("");
   const [images, setImages] = useState([]);
   const [thumbnail, setThumbnail] = useState("");
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     productFetch();
@@ -76,7 +74,6 @@ export const Admin = () => {
     }
   };
   const uploadProduct = async () => {
-    setLoading(true);
     try {
       const res = await api.post("/api/product/", {
         category_id: parseInt(category),
@@ -93,15 +90,13 @@ export const Admin = () => {
         setThumbnail("");
         setImages([]);
         setPrice("");
-        setSlug("");
+
         window.location.reload();
         return alert("Congrats product uploaded!");
       }
     } catch (error) {
       console.error(error);
       return alert(error);
-    } finally {
-      setLoading(false);
     }
   };
   const onDelete = async (productId: number) => {

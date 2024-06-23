@@ -1,6 +1,7 @@
 import api from "@/actions/api";
 import GradientButton from "../shared/gradient-button";
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 export const Contact = () => {
   const [name, setName] = useState("");
@@ -65,11 +66,13 @@ export const Contact = () => {
       </div>
 
       <div className=" mt-5 w-full flex justify-center items-center">
-        <GradientButton
+        <Button
+          variant="ghost"
           onClick={onSubmit}
-          content="Submit"
-          className=" px-12 py-4"
-        />
+          className=" font-semibold text-primary hover:text-secondary"
+        >
+          SUBMIT
+        </Button>
       </div>
     </div>
   );
